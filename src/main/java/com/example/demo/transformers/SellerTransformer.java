@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class SellerTransformer {
 
+    //Seller Request to Seller
     public static Seller sellerRequestToSeller(SellerRequest request){
         return Seller.builder()
                 .name(request.getName())
@@ -16,6 +17,7 @@ public class SellerTransformer {
                 .build();
     }
 
+    //Seller to SellerResponse
     public static SellerResponse sellerToSellerResponse(Seller seller){
         return SellerResponse.builder()
                 .name(seller.getName())
